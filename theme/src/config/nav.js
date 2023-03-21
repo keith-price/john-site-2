@@ -18,6 +18,6 @@ export const nav = [
 	},
 	{
 		title: 'Contact Us',
-		slug: 'company/contact',
+		slug: '/company/contact',
 	},
 ];
