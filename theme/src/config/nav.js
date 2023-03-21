@@ -8,11 +8,16 @@ export const nav = [
 		slug: '/company/about',
 	},
 	{
+		// TODO:create additional services page
+		title: 'Additional Services',
+		slug: '#',
+	},
+	{
 		title: 'Blog',
 		slug: '/blog',
 	},
 	{
-		title: 'Contact',
-		slug: '/company/contact',
+		title: 'Contact Us',
+		slug: 'company/contact',
 	},
 ];
