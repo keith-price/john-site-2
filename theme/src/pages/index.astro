@@ -8,28 +8,31 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 <Layout>
 	<HomeHeroSection />
 	<Container>
-		<section class="feature-card__section">
-			<div class="feature-card__grid">
+		<section class="about-section">
+			<div class="about-left">
 				<div>
 					<h2>About Us</h2>
 					<p>
-						We are qualified in building services and have over 30 years of
-						experience in the building industry. We offer design advice,
-						preparation and drawing of quality plans and the submission of
-						Planning Applications to local authorities covering a wide region.
-						We have experience with several planning authorities within the <strong
-							>Yorkshire and Northeast regions.</strong
-						>
+						<strong>Planning Application Services</strong> are qualified in building
+						services and have over 30 years of experience in the building industry.
+						We offer design advice, preparation and drawing of quality plans and
+						the submission of Planning Applications to local authorities covering
+						a wide region. We have experience with several planning authorities within
+						the <strong>Yorkshire and Northeast regions.</strong>
 						<br />
 						<br />
 						Learn more about <a href="/company/about">our services</a>
 					</p>
 				</div>
-				<FeatureCard
-					href="/company/about"
-					title="Our Experience"
-					imgSrc="/assets/images/home/screenshots/company-about-crop-min"
-				/>
+			</div>
+			<div class="about-right">
+				<picture>
+					<img
+						src="/assets/images/home/john-pic-min.jpg"
+						alt=""
+						id="home-hero-image"
+					/>
+				</picture>
 			</div>
 		</section>
 	</Container>
@@ -89,6 +92,29 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 </Layout>
 
 <style>
+	.about-section {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		margin-bottom: 6rem;
+	}
+	.about-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		max-width: 50%;
+	}
+	.about-left p {
+		max-width: 80%;
+	}
+	.about-right {
+		max-width: 50%;
+	}
+	.about-right img {
+		width: 100%;
+		height: auto;
+		border-radius: var(--theme-shape-radius);
+	}
 	.feature-card__section {
 		margin: var(--section-margin) auto;
 	}
@@ -112,6 +138,25 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 		max-width: 80%;
 	}
 	@media (max-width: 768px) {
+		.about-section {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 3rem;
+			gap: 1rem;
+		}
+		.about-left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			max-width: 100%;
+		}
+		.about-left p {
+			max-width: 100%;
+		}
+		.about-right {
+			max-width: 100%;
+		}
 		.feature-card__grid {
 			grid-template-columns: 1fr;
 			margin-bottom: 0;
