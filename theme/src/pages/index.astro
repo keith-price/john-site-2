@@ -9,22 +9,41 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2>Test Test</h2>
+			<!-- <h2>About Planning Application Services</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt
-				error tempore debitis nobis quam nulla, harum iste illum eligendi nam
-				deleniti suscipit dolorum distinctio ratione possimus id tempora illo.
-			</p>
+				We are qualified in building services. We have over 30 years of
+				experience in the building industry. We offer design advice, preparation
+				and drawing of quality plans and the submission of Planning Applications
+				to local authorities covering a wide region. We have experience with
+				several planning authorities within the <strong
+					>Yorkshire and Northeast regions.</strong
+				>
+			</p> -->
 			<div class="feature-card__grid">
+				<!-- <FeatureCard
+					href="/company/about"
+					title="Learn More"
+					imgSrc="/assets/images/home/screenshots/company-about-crop-min"
+				/> -->
+				<div>
+					<h2>About Us</h2>
+					<p>
+						We are qualified in building services and have over 30 years of
+						experience in the building industry. We offer design advice,
+						preparation and drawing of quality plans and the submission of
+						Planning Applications to local authorities covering a wide region.
+						We have experience with several planning authorities within the <strong
+							>Yorkshire and Northeast regions.</strong
+						>
+						<br />
+						<br />
+						Click <a href="/company/about">here</a> to learn more!
+					</p>
+				</div>
 				<FeatureCard
 					href="/company/about"
-					title="Test Test"
-					imgSrc="/assets/images/home/screenshots/drafting_house-min"
-				/>
-				<FeatureCard
-					href="/landing-pages/landing-2"
-					title="Landing Page 2"
-					imgSrc="/assets/images/home/screenshots/landing-2"
+					title="Learn More"
+					imgSrc="/assets/images/home/screenshots/company-about-crop-min"
 				/>
 			</div>
 		</section>
@@ -96,9 +115,16 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--theme-grid-gap);
 	}
+
+	.feature-card__grid p {
+		max-width: 80%;
+	}
 	@media (max-width: 768px) {
 		.feature-card__grid {
 			grid-template-columns: 1fr;
+		}
+		.feature-card__grid p {
+			max-width: 100%;
 		}
 	}
 </style>
