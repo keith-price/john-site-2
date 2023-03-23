@@ -15,7 +15,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 				<div class="hero-btns__container">
 					<Button href="/company/contact" 
 						>Contact Us</Button>
-					<Button href="/company/about" unelevated>Learn More</Button>
+					<Button class="button-light" href="/company/about">Our Experience</Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>
@@ -23,7 +23,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 				<picture>
 					<img
 						src="/assets/images/home/planning_draft-min.jpg"
-						alt="Astro Odyssey"
+						alt=""
 						id="home-hero-image"
 					/>
 				</picture>
@@ -34,11 +34,13 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <style>
 	.hero-section__section {
 		margin: var(--section-margin) auto;
+	
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		gap: 1rem;
+		margin-bottom: 8rem;
 	}
 	.hero-section__text {
 		justify-self: center;
@@ -65,6 +67,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 	@media (max-width: 768px) {
 		.hero-section__section {
 			grid-template-columns: 1fr;
+			margin-bottom: 3rem;
 		}
 	}
 </style>

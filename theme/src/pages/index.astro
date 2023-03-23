@@ -8,36 +8,45 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 <Layout>
 	<HomeHeroSection />
 	<Container>
-		<section class="feature-card__section">
-			<h2>Test Test</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt
-				error tempore debitis nobis quam nulla, harum iste illum eligendi nam
-				deleniti suscipit dolorum distinctio ratione possimus id tempora illo.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard
-					href="/company/about"
-					title="Test Test"
-					imgSrc="/assets/images/home/screenshots/drafting_house-min"
-				/>
-				<FeatureCard
-					href="/landing-pages/landing-2"
-					title="Landing Page 2"
-					imgSrc="/assets/images/home/screenshots/landing-2"
-				/>
+		<section class="about-section">
+			<div class="about-left">
+				<div>
+					<h2>About Us</h2>
+					<p>
+						<strong>Planning Application Services</strong> are qualified in building
+						services and have over 30 years of experience in the building industry.
+						We offer design advice, preparation and drawing of quality plans and
+						the submission of Planning Applications to local authorities covering
+						a wide region. We have experience with several planning authorities within
+						the <strong>Yorkshire and Northeast regions.</strong>
+						<br />
+						<br />
+						Learn more about <a href="/company/about">our services</a> here.
+					</p>
+				</div>
+			</div>
+			<div class="about-right">
+				<picture>
+					<img
+						src="/assets/images/home/john-pic-min.jpg"
+						alt=""
+						id="home-hero-image"
+					/>
+				</picture>
 			</div>
 		</section>
 	</Container>
 
 	<Container>
 		<section class="feature-card__section">
-			<h2>Company Pages</h2>
-			<p>
-				Use one of our prebuilt company pages for your about page, contact page,
-				legal pages, blog posts, etc.
+			<h2 class="centered">Planning Application Project Stages</h2>
+			<p class="centered">
+				For more information on our bespoke design advice service and planning
+				application submissions process please call John Irwin on 07562 724621
+				or complete the <a href="/company/contact">Enquiry Form</a> here and we will
+				respond as soon as possible.
 			</p>
-			<div class="feature-card__grid">
+			<div class="feature-card__grid-alt">
 				<FeatureCard
 					href="/company/about"
 					title="About Page"
@@ -53,29 +62,24 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 					title="Blog Page"
 					imgSrc="/assets/images/home/screenshots/blog"
 				/>
-				<FeatureCard
-					href="/blog/posts/remote-work-mental-health"
-					title="Blog Post"
-					imgSrc="/assets/images/home/screenshots/blog-post"
-				/>
-				<FeatureCard
-					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
-					title="Legal Page"
-				/>
 			</div>
 		</section>
 	</Container>
 
 	<Container>
 		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
-			<div class="feature-card__grid">
+			<h2 class="centered">Additional Services Offered</h2>
+			<p class="centered">Upon request we can quote for additional services.</p>
+			<div class="feature-card__grid-alt">
 				<FeatureCard
 					href="/theme/get-started"
 					imgSrc="/assets/images/home/screenshots/get-started"
 					title="Get Started"
+				/>
+				<FeatureCard
+					href="/theme/style-guide"
+					imgSrc="/assets/images/home/screenshots/style-guide"
+					title="Style Guide"
 				/>
 				<FeatureCard
 					href="/theme/style-guide"
@@ -88,17 +92,80 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 </Layout>
 
 <style>
+	.about-section {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		margin-bottom: 6rem;
+	}
+	.about-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		max-width: 50%;
+	}
+	.about-left p {
+		max-width: 80%;
+	}
+	.about-right {
+		max-width: 50%;
+	}
+	.about-right img {
+		width: 100%;
+		height: auto;
+		border-radius: var(--theme-shape-radius);
+	}
 	.feature-card__section {
 		margin: var(--section-margin) auto;
+	}
+	.centered {
+		text-align: center;
 	}
 	.feature-card__grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--theme-grid-gap);
+		margin-bottom: 6rem;
+	}
+	.feature-card__grid-alt {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--theme-grid-gap);
+		margin-bottom: 6rem;
+	}
+
+	.feature-card__grid p {
+		max-width: 80%;
 	}
 	@media (max-width: 768px) {
+		.about-section {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 3rem;
+			gap: 1rem;
+		}
+		.about-left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			max-width: 100%;
+		}
+		.about-left p {
+			max-width: 100%;
+		}
+		.about-right {
+			max-width: 100%;
+		}
 		.feature-card__grid {
 			grid-template-columns: 1fr;
+			margin-bottom: 0;
+		}
+		.feature-card__grid p {
+			max-width: 100%;
+		}
+		.feature-card__grid-alt {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 </style>
