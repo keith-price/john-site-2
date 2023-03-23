@@ -9,7 +9,8 @@ import {
 const selectOptions = ['Google Search', 'Social Media', 'Email'];
 ---
 
-<form name="contact" netlify>
+<!-- netlify is set here to allow netlify forms to automatically set data capture from the form -->
+<form name="contact" netlify netlify-honeypot="bot-field" data-netlify="true">
 	<FormInput type="text" label="Name" name="name" placeholder="John Doe" />
 	<FormInput
 		type="email"
