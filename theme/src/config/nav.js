@@ -10,7 +10,7 @@ export const nav = [
 	{
 		// TODO:create additional services page
 		title: 'Additional Services',
-		slug: '#',
+		slug: '/company/additional-services',
 	},
 	{
 		title: 'Blog',
