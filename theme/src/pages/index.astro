@@ -7,36 +7,6 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 
 <Layout>
 	<HomeHeroSection />
-	<Container>
-		<section class="about-section">
-			<div class="about-left">
-				<div>
-					<h2>About Us</h2>
-					<p>
-						<strong>Planning Application Services</strong> are qualified in building
-						services and have over 30 years of experience in the building industry.
-						We offer design advice, preparation and drawing of quality plans and
-						the submission of Planning Applications to local authorities covering
-						a wide region. We have experience with several planning authorities within
-						the <strong>Yorkshire and Northeast regions.</strong>
-						<br />
-						<br />
-						Learn more about <a href="/company/about">our services</a> here.
-					</p>
-				</div>
-			</div>
-			<div class="about-right">
-				<picture>
-					<!-- TODO: need to set alt tags for all images -->
-					<img
-						src="/assets/images/home/john-pic-min.jpg"
-						alt=""
-						id="home-hero-image"
-					/>
-				</picture>
-			</div>
-		</section>
-	</Container>
 
 	<Container>
 		<section class="feature-card__section">
@@ -48,21 +18,6 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				respond as soon as possible.
 			</p>
 			<div class="feature-card__grid-alt">
-				<!-- <FeatureCard
-					href="/company/about"
-					title="About Page"
-					imgSrc="/assets/images/home/screenshots/about"
-				/>
-				<FeatureCard
-					href="/company/contact"
-					title="Contact Page"
-					imgSrc="/assets/images/home/screenshots/contact"
-				/>
-				<FeatureCard
-					href="/blog/"
-					title="Blog Page"
-					imgSrc="/assets/images/home/screenshots/blog"
-				/> -->
 				<picture>
 					<img
 						src="/assets/images/home/house_with_tape-min.jpg"
@@ -93,21 +48,58 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 			<h2 class="centered">Additional Services Offered</h2>
 			<p class="centered">Upon request we can quote for additional services.</p>
 			<div class="feature-card__grid-alt">
-				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				/>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				/>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				/>
+				<picture>
+					<img
+						src="/assets/images/home/house_with_tape-min.jpg"
+						alt=""
+						id="home-hero-image"
+					/>
+				</picture>
+				<picture>
+					<img
+						src="/assets/images/home/house_with_tape-min.jpg"
+						alt=""
+						id="home-hero-image"
+					/>
+				</picture>
+				<picture>
+					<img
+						src="/assets/images/home/house_with_tape-min.jpg"
+						alt=""
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+		</section>
+	</Container>
+	<Container>
+		<!-- TODO: should the about section be here or at the top under the hero? -->
+		<section class="about-section">
+			<div class="about-left">
+				<div>
+					<h2>About Us</h2>
+					<p>
+						<strong>Planning Application Services</strong> are qualified in building
+						services and have over 30 years of experience in the building industry.
+						We offer design advice, preparation and drawing of quality plans and
+						the submission of Planning Applications to local authorities covering
+						a wide region. We have experience with several planning authorities within
+						the <strong>Yorkshire and Northeast regions.</strong>
+						<br />
+						<br />
+						Learn more about <a href="/company/about">our services</a> here.
+					</p>
+				</div>
+			</div>
+			<div class="about-right">
+				<picture>
+					<!-- TODO: need to set alt tags for all images -->
+					<img
+						src="/assets/images/home/john-pic-min.jpg"
+						alt=""
+						id="home-hero-image"
+					/>
+				</picture>
 			</div>
 		</section>
 	</Container>
