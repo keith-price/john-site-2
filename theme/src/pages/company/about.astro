@@ -19,7 +19,7 @@ const seo = {
 				your planning approval
 			</p>
 		</div>
-		<picture slot="image-container">
+		<picture slot="image-container" class="about-image">
 			<!-- TODO: set alt text -->
 			<img
 				src="/assets/images/home/john-pic-min.jpg"
@@ -73,3 +73,13 @@ const seo = {
 		</p>
 	</TextSection>
 </Layout>
+
+<style>
+	/* to keep image centred on mobile */
+	@media (max-width: 768px) {
+		.about-image {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+</style>
