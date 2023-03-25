@@ -12,7 +12,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<Container>
 		<section class="feature-card__section">
 			<h2 class="centered">Planning Application Project Stages</h2>
-			<p class="centered-paragraph">
+			<p class="centered-paragraph centered-with-margin">
 				For more information on our bespoke design advice service and planning
 				application submissions process please call John Irwin on 07562 724621
 				or complete the <a href="/company/contact">Enquiry Form</a> here and we will
@@ -20,7 +20,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 			</p>
 			<div class="feature-card__grid-alt">
 				<div>
-					<h3>Survey</h3>
+					<h3 class="h3-margin-top">Survey</h3>
 					<picture>
 						<img
 							src="/assets/images/home/screenshots/house_with_tape-min.webp"
@@ -80,9 +80,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<Container>
 		<section class="feature-card__section">
 			<h2 class="centered">Additional Services Offered</h2>
-			<p class="centered centered-with-margin">
-				Upon request we can quote for additional services.
-			</p>
+			<p class="centered">Upon request we can quote for additional services.</p>
 			<div class="feature-card__grid-single">
 				<div class="feature-container">
 					<div class="feature-left">
@@ -325,6 +323,9 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 		}
 		.feature-heading {
 			display: none;
+		}
+		.h3-margin-top {
+			margin-top: 2rem;
 		}
 	}
 </style>
