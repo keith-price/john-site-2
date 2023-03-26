@@ -1,10 +1,16 @@
 ---
 ---
 
-<p class="odyssey-logo">JJ Irwin</p>
+<p class="odyssey-logo">
+	<img src="/john-logo.png" alt="logo showing a house and blueprint sketches" />
+	JJ Irwin
+</p>
 
 <style>
 	.odyssey-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: fit-content;
 		margin: 0;
 		font-family: var(--theme-font-family-serif);
@@ -14,5 +20,12 @@
 	.odyssey-logo:hover {
 		text-decoration: underline;
 		cursor: pointer;
+	}
+
+	.odyssey-logo img {
+		max-width: 60px;
+		height: auto;
+		margin-right: 1rem;
+		border-radius: var(--theme-shape-radius);
 	}
 </style>
